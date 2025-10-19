@@ -2,7 +2,7 @@
   <footer class="relative mt-6 rounded-tl-[80px] bg-black text-white md:rounded-tl-[100px]">
     <section class="relative mx-auto max-w-[1328px]">
       <div class="container relative mx-auto max-xl:px-5">
-        <div class="absolute -top-6 right-0 hidden lg:block">
+        <div class="absolute -top-10 right-0 hidden lg:block">
           <nuxt-link :to="localePath('index')" class="cursor-pointer">
             <img src="~/assets/img/Utils/footer.svg" alt="footer" />
           </nuxt-link>
@@ -24,7 +24,7 @@
               />
             </nuxt-link>
           </div>
-          <div class="border-b border-white max-lg:text-center max-md:py-10 md:pb-14">
+          <div class="border-b border-white max-lg:text-center max-md:py-10 md:pb-12">
             <h1
               class="mb-4 text-2xl font-medium max-lg:text-center sm:text-3xl md:mb-6 md:text-4xl lg:max-w-[529px] lg:text-[52px] lg:!leading-[52px]"
             >

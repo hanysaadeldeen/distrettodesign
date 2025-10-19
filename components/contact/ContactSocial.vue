@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap items-center justify-center gap-8 lg:gap-11">
+  <div class="flex flex-wrap items-start justify-center gap-8 lg:gap-11">
     <div
       v-for="value in Contact"
       :key="value.id"
