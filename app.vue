@@ -6,22 +6,32 @@
   </div>
 </template>
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
-import { watch } from "vue";
+import { useI18n } from 'vue-i18n';
+import { watch } from 'vue';
 
 const { locale } = useI18n();
 
 const setDirection = () => {
-  const direction = locale.value === "en" ? "ltr" : "rtl";
-  if (typeof document !== "undefined") {
-    document.documentElement.setAttribute("dir", direction);
-    document.documentElement.setAttribute("lang", locale.value);
+  const direction = locale.value === 'en' ? 'ltr' : 'rtl';
+  if (typeof document !== 'undefined') {
+    document.documentElement.setAttribute('dir', direction);
+    document.documentElement.setAttribute('lang', locale.value);
   }
 };
 onMounted(() => {
   setDirection();
 });
 watch(locale, setDirection, { immediate: true });
+import Lenis from '@studio-freight/lenis';
+
+onMounted(() => {
+  const lenis = new Lenis();
+  function raf(time: any) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+});
 </script>
 
 <style scoped>
@@ -29,7 +39,7 @@ html {
   direction: rtl;
 }
 
-html[dir="ltr"] {
+html[dir='ltr'] {
   direction: ltr;
 }
 </style>
