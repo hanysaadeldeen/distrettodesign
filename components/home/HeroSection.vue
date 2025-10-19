@@ -1,5 +1,5 @@
 <template>
-  <div class="HeroSection relative h-[calc(100vh-112px)]">
+  <div class="HeroSection relative h-[calc(100vh-96px)] md:h-[calc(100vh-112px)]">
     <div class="absolute -top-[112px] left-0 -z-10 h-[calc(100%+112px)] w-full">
       <img
         src="~/assets/img/home/heroSection/HeroImg.png"
