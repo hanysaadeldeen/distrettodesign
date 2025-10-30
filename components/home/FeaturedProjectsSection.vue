@@ -117,7 +117,7 @@
 .group,
 img {
   border-radius: 40px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 @media (max-width: 768px) {

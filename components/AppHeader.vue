@@ -43,13 +43,13 @@
           </div>
           <div class="cursor-pointer text-2xl sm:text-3xl lg:hidden">
             <i
-              class="fa-solid fa-bars-staggered text-white"
-              :class="{ hidden: isSideBar }"
+              class="fa-solid fa-bars-staggered"
+              :class="[{ hidden: isSideBar }, adjustedPath === '/' ? 'text-white' : 'text-black']"
               @click="toggleSidebar"
             />
             <i
               class="fa-solid fa-xmark text-white"
-              :class="{ hidden: !isSideBar }"
+              :class="[{ hidden: !isSideBar }, adjustedPath === '/' ? 'text-white' : 'text-black']"
               @click="toggleSidebar"
             />
           </div>

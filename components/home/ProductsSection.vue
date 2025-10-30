@@ -15,16 +15,16 @@
         </div>
         <div class="flex justify-center gap-2 lg:gap-4">
           <div class="flex flex-col items-stretch gap-2 lg:gap-4">
-            <div class="h-1/2">
+            <div class="h-1/2 max-w-[250px]">
               <img
-                src="~/assets/img/home/products/productOne.svg"
+                src="~/assets/img/home/products/productOne.webp"
                 alt=""
                 class="size-full rounded-[16px] object-cover lg:rounded-[25px]"
               />
             </div>
-            <div class="h-1/2">
+            <div class="h-1/2 max-w-[250px]">
               <img
-                src="~/assets/img/home/products/productTwo.svg"
+                src="~/assets/img/home/products/productTwo.webp"
                 alt=""
                 class="size-full rounded-[16px] object-cover lg:rounded-[25px]"
               />

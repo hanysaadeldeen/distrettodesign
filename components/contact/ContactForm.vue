@@ -91,7 +91,7 @@
         </div>
       </Form>
     </div>
-    <div class="relative flex w-[604px] max-w-[604px] flex-col rounded-[40px]">
+    <div class="relative flex w-full max-w-[604px] flex-col rounded-[40px]">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4440.142718409408!2d39.1429966!3d21.562991900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3db53648e937b%3A0x2115491c6c29660c!2sDistretto%20Design!5e1!3m2!1sen!2seg!4v1760879059779!5m2!1sen!2seg"
         style="border: 0"
