@@ -1,6 +1,6 @@
 <template>
   <section class="Featured-projects bg-SectionBG">
-    <div class="container mx-auto max-w-[1328px] py-16 max-xl:px-5 md:py-[120px]">
+    <div class="container mx-auto max-w-[1328px] py-16 max-2xl:px-6 md:py-[120px]">
       <div class="mb-14 flex items-center justify-between gap-4 max-sm:flex-col">
         <SectionTitle title="FEATURED PROJECTS" class="text-center uppercase" />
         <nuxt-link to="/projects">

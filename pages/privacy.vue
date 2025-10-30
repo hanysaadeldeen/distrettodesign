@@ -38,7 +38,7 @@
                 <li
                   v-for="(bullet, index) in section.content"
                   :key="index"
-                  class="listamax-xl:px-5 text-titleHeaderSubtitle relative mb-1 text-base font-medium md:text-lg lg:text-2xl"
+                  class="listamax-2xl:px-6 text-titleHeaderSubtitle relative mb-1 text-base font-medium md:text-lg lg:text-2xl"
                   :class="locale === 'en' ? 'before:left-0' : 'before:right-0'"
                 >
                   {{ $t(bullet) }}

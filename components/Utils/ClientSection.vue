@@ -1,5 +1,5 @@
 <template>
-  <section class="Clients mx-auto max-w-[1328px] max-xl:px-5">
+  <section class="Clients mx-auto max-w-[1328px] max-2xl:px-6">
     <div class="container mx-auto">
       <SectionTitle
         title="Includes group of Europe’s most established furniture brands."

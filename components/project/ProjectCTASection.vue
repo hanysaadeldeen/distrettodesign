@@ -29,7 +29,7 @@
 
 <style scoped>
 .imgCta {
-  background-image: url('../../assets/img/projects/projects.webp');
+  background-image: url('../../assets/img/projects/projectsCTA.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -2,7 +2,7 @@
   <section class="relative">
     <div class="absolute left-0 top-0 h-full w-full bg-[#000000] opacity-70"></div>
     <div
-      class="container relative z-20 mx-auto max-w-[1328px] py-14 max-xl:px-5 lg:py-20 xl:py-[90px]"
+      class="container relative z-20 mx-auto max-w-[1328px] py-14 max-2xl:px-6 lg:py-20 xl:py-[90px]"
     >
       <div class="grid grid-cols-1 gap-8 text-white sm:grid-cols-2 lg:grid-cols-3 lg:gap-11">
         <div

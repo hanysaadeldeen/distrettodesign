@@ -2,7 +2,7 @@
   <section class="ProjectCTA overflow-hidden">
     <div class="w-screen pr-8 2xl:pr-[calc((100%-1410px)/2)]">
       <div
-        class="imgCta xl:py-32max-xl:px-5 relative rounded-r-[60px] py-8 pr-5 sm:py-14 sm:pr-14 md:py-20 md:pr-20 lg:rounded-r-[100px] 2xl:px-[calc((100%-1410px))]"
+        class="imgCta xl:py-32max-2xl:px-6 relative rounded-r-[60px] py-8 pr-5 sm:py-14 sm:pr-14 md:py-20 md:pr-20 lg:rounded-r-[100px] 2xl:px-[calc((100%-1410px))]"
       >
         <div
           class="absolute left-0 top-0 z-10 h-full w-full rounded-r-[60px] bg-[#000000] opacity-50 transition-all duration-500 ease-in-out lg:rounded-r-[100px]"

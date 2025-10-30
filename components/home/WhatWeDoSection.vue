@@ -1,6 +1,6 @@
 <template>
   <section class="relative">
-    <div class="relative mx-auto max-w-[1328px] max-xl:px-5">
+    <div class="relative mx-auto max-w-[1328px] max-2xl:px-6">
       <div class="md:hidden">
         <div class="mb-8 md:mb-14">
           <h1 class="text-2xl font-medium uppercase sm:text-3xl md:text-4xl lg:text-6xl">
