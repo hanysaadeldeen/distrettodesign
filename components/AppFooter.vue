@@ -109,10 +109,18 @@
               </li>
             </ul>
             <p class="text-center">
-              © 2025 Distretto Design. All rights reserved. Made by
-              <a href="https://do.com.sa/" class="mx-1 text-lg font-bold underline" target="_blank"
-                >DO</a
-              >.
+              {{
+                `All rights reserved for Distretto Design &COPY; ${currentYear} — Designed and developed by`
+              }}
+              <a href="https://do.com.sa/" target="_blank">
+                <img
+                  src="~/assets/img/whiteDo.gif"
+                  class="mx-1 inline-block h-5 w-10"
+                  width="40"
+                  height="20"
+                  alt="Do Logo"
+                />
+              </a>
             </p>
           </div>
         </div>
@@ -123,6 +131,8 @@
 
 <script setup lang="ts">
 const localePath = useLocalePath();
+const { locale } = useI18n();
+
 const route = useRoute();
 
 const getPathWithoutLocale = (path: string) => {
@@ -134,6 +144,7 @@ const getPathWithoutLocale = (path: string) => {
 };
 
 const adjustedPath = computed(() => getPathWithoutLocale(route.path));
+const currentYear = new Date().getFullYear();
 </script>
 
 <style scoped>
