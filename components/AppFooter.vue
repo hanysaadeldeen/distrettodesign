@@ -50,6 +50,9 @@
                   <li :class="adjustedPath === '/careers' ? 'active' : ''">
                     <nuxt-link :to="localePath('careers')"> Careers </nuxt-link>
                   </li>
+                  <li :class="adjustedPath === '/shop' ? 'active' : ''">
+                    <a href="https://shop.distrettodesign.com/" target="_blank"> Online Shop </a>
+                  </li>
                   <li :class="adjustedPath === '/contact' ? 'active' : ''">
                     <nuxt-link :to="localePath('contact')"> Contact Us </nuxt-link>
                   </li>
