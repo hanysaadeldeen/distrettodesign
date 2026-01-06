@@ -31,7 +31,7 @@
               <li :class="adjustedPath === '/careers' ? 'active' : ''">
                 <nuxt-link :to="localePath('careers')"> Careers </nuxt-link>
               </li>
-              <li :class="adjustedPath === '/careers' ? 'active' : ''">
+              <li :class="adjustedPath === '/onlineShop' ? 'active' : ''">
                 <a href="https://shop.distrettodesign.com/" target="_blank"> Online Shop </a>
               </li>
               <li :class="adjustedPath === '/contact' ? 'active' : ''">
@@ -104,6 +104,16 @@
                   >
                     Careers
                   </nuxt-link>
+                </li>
+                <li :class="[adjustedPath === '/onlineShop' ? 'active' : '', 'text-white']">
+                  <a
+                    href="https://shop.distrettodesign.com/"
+                    target="_blank"
+                    @click="isSideBar = !isSideBar"
+                    class="w-full"
+                  >
+                    Online Shop
+                  </a>
                 </li>
                 <li :class="[adjustedPath === '/contact' ? 'active' : '', 'text-white']">
                   <nuxt-link
