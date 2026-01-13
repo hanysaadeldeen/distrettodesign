@@ -70,8 +70,9 @@ import 'swiper/css/autoplay';
 import homeHeroOne from '../../assets/img/home/heroSection/homeHeroOne.webp';
 import homeHeroTwo from '../../assets/img/home/heroSection/homeHeroTwo.webp';
 import homeHeroThree from '../../assets/img/home/heroSection/homeHeroThree.webp';
+import homeHeroFour from '../../assets/img/home/heroSection/homeHeroFour.webp';
 
-const slides = [homeHeroOne, homeHeroTwo, homeHeroThree];
+const slides = [homeHeroOne, homeHeroTwo, homeHeroThree, homeHeroFour];
 </script>
 
 <style>

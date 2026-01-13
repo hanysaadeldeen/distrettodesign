@@ -3,9 +3,9 @@
     <div class="relative mx-auto max-w-[1328px] max-2xl:px-6">
       <div class="md:hidden">
         <div class="mb-8 md:mb-14">
-          <h1 class="text-2xl font-medium uppercase sm:text-3xl md:text-4xl lg:text-6xl">
+          <h2 class="text-2xl font-medium uppercase sm:text-3xl md:text-4xl lg:text-6xl">
             WHAT WE DO
-          </h1>
+          </h2>
         </div>
       </div>
 
@@ -40,9 +40,9 @@
                   />
                 </div>
                 <div class="flex w-full flex-col items-start justify-between gap-6 p-11 md:w-1/2">
-                  <h1 class="text-2xl font-medium text-primary sm:text-3xl md:text-4xl lg:text-6xl">
+                  <h3 class="text-2xl font-medium text-primary sm:text-3xl md:text-4xl lg:text-6xl">
                     {{ project.number }}
-                  </h1>
+                  </h3>
                   <div>
                     <p class="mb-2 text-xl font-medium md:text-2xl lg:text-3xl">
                       {{ project.title }}

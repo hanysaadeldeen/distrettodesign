@@ -25,18 +25,18 @@
             </nuxt-link>
           </div>
           <div class="border-b border-white max-lg:text-center max-md:py-10 md:pb-12">
-            <h1
+            <h2
               class="mb-4 text-2xl font-medium max-lg:text-center sm:text-3xl md:mb-6 md:text-4xl lg:max-w-[529px] lg:text-[52px] lg:!leading-[52px]"
             >
               SHAPING VISION INTO SPACES
-            </h1>
-            <nuxt-link to="/contact">
-              <button class="gradient-button mt-6 !bg-transparent hover:!bg-primary">
+            </h2>
+            <nuxt-link :to="localePath('contact')">
+              <button class="gradient-button !bg-transparent hover:!bg-primary">
                 Get Our Service
               </button>
             </nuxt-link>
             <div class="mt-6">
-              <nav>
+              <nav class="max-w-[435px]">
                 <ul
                   class="flex flex-wrap gap-6 text-xl font-medium *:cursor-pointer *:text-white hover:*:text-primary max-lg:items-center max-lg:justify-center"
                 >
@@ -55,6 +55,12 @@
                   </li>
                   <li :class="adjustedPath === '/contact' ? 'active' : ''">
                     <nuxt-link :to="localePath('contact')"> Contact Us </nuxt-link>
+                  </li>
+                  <li>
+                    <a href="/pdf/Distretto Brochure Dec 2025.pdf" download>Brochure </a>
+                  </li>
+                  <li>
+                    <a href="/pdf/Company Profile 2025.pdf" download>Company Profile </a>
                   </li>
                 </ul>
               </nav>

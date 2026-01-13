@@ -41,7 +41,9 @@
           </nav>
           <div class="hidden justify-between gap-10 lg:flex">
             <nuxt-link :to="localePath('contact')">
-              <button class="gradient-button">Get our service</button>
+              <button class="gradient-button hover:!bg-black hover:text-white">
+                Get our service
+              </button>
             </nuxt-link>
           </div>
           <div class="cursor-pointer text-2xl sm:text-3xl lg:hidden">

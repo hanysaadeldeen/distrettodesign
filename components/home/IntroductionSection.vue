@@ -31,7 +31,9 @@
             Because great design isn’t seen — <span class="font-medium"> it’s felt </span>
           </h2>
           <nuxt-link to="/about">
-            <button class="gradient-button mt-6">Know More About Us</button>
+            <button class="gradient-button mt-6 hover:!bg-black hover:text-white">
+              Know More About Us
+            </button>
           </nuxt-link>
         </div>
       </div>
