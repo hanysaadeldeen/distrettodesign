@@ -21,29 +21,29 @@
           <nav class="relative hidden text-white lg:block">
             <div class="blob bg-primary" aria-hidden="true"></div>
             <ul class="flex gap-10" :class="adjustedPath !== '/' ? 'text-black' : ''">
-              <li :class="adjustedPath === '/projects' ? 'active' : ''">
-                <nuxt-link :to="localePath('projects')"> Projects </nuxt-link>
-              </li>
               <li :class="adjustedPath === '/about' ? 'active' : ''">
                 <nuxt-link :to="localePath('about')"> About </nuxt-link>
               </li>
-
+              <li :class="adjustedPath === '/projects' ? 'active' : ''">
+                <nuxt-link :to="localePath('projects')"> Projects </nuxt-link>
+              </li>
+              <li :class="adjustedPath === '/partners' ? 'active' : ''">
+                <nuxt-link :to="localePath('partners')"> Partners </nuxt-link>
+              </li>
+              <li :class="adjustedPath === '/onlineShop' ? 'active' : ''">
+                <a href="https://shop.distrettodesign.com/" target="_blank"> Shop </a>
+              </li>
               <li :class="adjustedPath === '/careers' ? 'active' : ''">
                 <nuxt-link :to="localePath('careers')"> Careers </nuxt-link>
               </li>
-              <li :class="adjustedPath === '/onlineShop' ? 'active' : ''">
-                <a href="https://shop.distrettodesign.com/" target="_blank"> Online Shop </a>
-              </li>
-              <li :class="adjustedPath === '/contact' ? 'active' : ''">
-                <nuxt-link :to="localePath('contact')"> Contact </nuxt-link>
+              <li>
+                <a href="/pdf/Company Profile 2025.pdf" download>Company Profile </a>
               </li>
             </ul>
           </nav>
           <div class="hidden justify-between gap-10 lg:flex">
             <nuxt-link :to="localePath('contact')">
-              <button class="gradient-button hover:!bg-black hover:text-white">
-                Get our service
-              </button>
+              <button class="gradient-button hover:!bg-black hover:text-white">Contact Us</button>
             </nuxt-link>
           </div>
           <div class="cursor-pointer text-2xl sm:text-3xl lg:hidden">
@@ -74,6 +74,15 @@
           <div class="pt-[136px]">
             <nav class="mt-4 inline-block w-full">
               <ul class="flex flex-col gap-5">
+                <li :class="[adjustedPath === '/about' ? 'active' : '', 'text-white']">
+                  <nuxt-link
+                    :to="localePath('about')"
+                    @click="isSideBar = !isSideBar"
+                    class="w-full"
+                  >
+                    About
+                  </nuxt-link>
+                </li>
                 <li
                   :class="[
                     adjustedPath === '/projects' ? 'active' : '',
@@ -88,14 +97,29 @@
                     Projects
                   </nuxt-link>
                 </li>
-                <li :class="[adjustedPath === '/about' ? 'active' : '', 'text-white']">
+                <li
+                  :class="[
+                    adjustedPath === '/partners' ? 'active' : '',
+                    'text-white hover:text-primary',
+                  ]"
+                >
                   <nuxt-link
-                    :to="localePath('about')"
+                    :to="localePath('partners')"
                     @click="isSideBar = !isSideBar"
                     class="w-full"
                   >
-                    About
+                    Partners
                   </nuxt-link>
+                </li>
+                <li :class="[adjustedPath === '/onlineShop' ? 'active' : '', 'text-white']">
+                  <a
+                    href="https://shop.distrettodesign.com/"
+                    target="_blank"
+                    @click="isSideBar = !isSideBar"
+                    class="w-full"
+                  >
+                    Shop
+                  </a>
                 </li>
 
                 <li :class="[adjustedPath === '/careers' ? 'active' : '', 'text-white']">
@@ -107,24 +131,8 @@
                     Careers
                   </nuxt-link>
                 </li>
-                <li :class="[adjustedPath === '/onlineShop' ? 'active' : '', 'text-white']">
-                  <a
-                    href="https://shop.distrettodesign.com/"
-                    target="_blank"
-                    @click="isSideBar = !isSideBar"
-                    class="w-full"
-                  >
-                    Online Shop
-                  </a>
-                </li>
-                <li :class="[adjustedPath === '/contact' ? 'active' : '', 'text-white']">
-                  <nuxt-link
-                    :to="localePath('contact')"
-                    @click="isSideBar = !isSideBar"
-                    class="w-full"
-                  >
-                    Contact
-                  </nuxt-link>
+                <li class="text-white hover:text-primary">
+                  <a href="/pdf/Company Profile 2025.pdf" download>Company Profile </a>
                 </li>
               </ul>
             </nav>
@@ -136,7 +144,7 @@
                         </div> -->
             <div class="mt-5 justify-between gap-10">
               <nuxt-link :to="localePath('contact')" @click="isSideBar = !isSideBar">
-                <button class="gradient-button">Get our service</button>
+                <button class="gradient-button">Contact Us</button>
               </nuxt-link>
             </div>
           </div>

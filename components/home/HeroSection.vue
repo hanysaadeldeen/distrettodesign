@@ -26,7 +26,7 @@
       <div class="mx-auto w-full max-w-[1512px]">
         <div class="mr-auto h-full w-fit overflow-hidden px-6">
           <h1
-            class="relative z-10 pt-16 text-4xl font-semibold text-white sm:text-5xl md:text-7xl lg:pt-[110px] lg:text-[80px] lg:!leading-[90px]"
+            class="sr-only relative z-10 pt-16 text-4xl font-semibold text-white sm:text-5xl md:text-7xl lg:pt-[110px] lg:text-[80px] lg:!leading-[90px]"
           >
             DISTRETTO <br />
             DESIGN
@@ -72,7 +72,7 @@ import homeHeroTwo from '../../assets/img/home/heroSection/homeHeroTwo.webp';
 import homeHeroThree from '../../assets/img/home/heroSection/homeHeroThree.webp';
 import homeHeroFour from '../../assets/img/home/heroSection/homeHeroFour.webp';
 
-const slides = [homeHeroOne, homeHeroTwo, homeHeroThree, homeHeroFour];
+const slides = [homeHeroFour, homeHeroOne, homeHeroTwo, homeHeroThree];
 </script>
 
 <style>
@@ -104,5 +104,15 @@ const slides = [homeHeroOne, homeHeroTwo, homeHeroThree, homeHeroFour];
   opacity: 1;
   width: 28px;
   border-radius: 6px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 </style>

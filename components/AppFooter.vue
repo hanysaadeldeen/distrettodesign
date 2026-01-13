@@ -31,9 +31,7 @@
               SHAPING VISION INTO SPACES
             </h2>
             <nuxt-link :to="localePath('contact')">
-              <button class="gradient-button !bg-transparent hover:!bg-primary">
-                Get Our Service
-              </button>
+              <button class="gradient-button !bg-transparent hover:!bg-primary">Contact Us</button>
             </nuxt-link>
             <div class="mt-6">
               <nav class="max-w-[435px]">
