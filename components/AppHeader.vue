@@ -121,7 +121,6 @@
                     Shop
                   </a>
                 </li>
-
                 <li :class="[adjustedPath === '/careers' ? 'active' : '', 'text-white']">
                   <nuxt-link
                     :to="localePath('careers')"
@@ -136,12 +135,6 @@
                 </li>
               </ul>
             </nav>
-            <!-- <div class="mt-5 flex flex-col items-start justify-between gap-10">
-                            <button @click="setLocale(locale === 'en' ? 'ar' : 'en')"
-                                class="text-base font-normal text-white hover:text-[#fff422]">
-                                {{ locale === "en" ? "العربية" : "English" }}
-                            </button>
-                        </div> -->
             <div class="mt-5 justify-between gap-10">
               <nuxt-link :to="localePath('contact')" @click="isSideBar = !isSideBar">
                 <button class="gradient-button">Contact Us</button>
@@ -155,16 +148,8 @@
 </template>
 
 <script setup lang="ts">
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-// onMounted(() => {
-//     AOS.init({
-//         duration: 600,
-//         once: true,
-//     })
-// })
 import { useDebounceFn } from '@vueuse/core';
-const { locale, setLocale } = useI18n();
+const { locale } = useI18n();
 const localePath = useLocalePath();
 const isSideBar = ref<boolean>(false);
 const transitionName = computed(() => (locale.value === 'ar' ? 'sidebar-ar' : 'sidebar-en'));
@@ -213,7 +198,7 @@ a {
 
 ul li {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   display: inline-block;
   position: relative;
   list-style: none;
@@ -241,8 +226,6 @@ ul li.active {
 }
 
 .sideBar {
-  /* background: linear-gradient(to right, #0a0911, #0a0911f5);
-    opacity: 0.8; */
   background: linear-gradient(to right, rgba(10, 9, 17, 0.9), rgba(10, 9, 17, 0.9));
   will-change: transform;
 }

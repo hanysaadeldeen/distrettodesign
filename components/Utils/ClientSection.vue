@@ -3,50 +3,46 @@
     <div class="mb-10 max-2xl:px-6">
       <SectionTitle
         title="Includes group of Europe’s most established furniture brands."
-        class="mx-auto mb-10 text-center capitalize md:mb-14 lg:max-w-[1016px] lg:!leading-[52px]"
+        class="mx-auto text-center capitalize lg:max-w-[880px] lg:!leading-[52px]"
       />
     </div>
     <Vue3Marquee
       :duration="100"
       :pause-on-hover="false"
-      :direction="locale === 'en' ? '' : 'reverse'"
+      direction="reverse"
+      class="overflow-hidden"
     >
       <div
         v-for="client in Clients"
-        class="group mx-3 flex h-[128px] items-center justify-center rounded-l-3xl bg-SectionBG2 p-6 md:h-[190px] md:min-w-[300px] md:rounded-l-[40px]"
+        class="group mx-1.5 flex h-[80px] items-center justify-center overflow-hidden rounded-r-2xl bg-SectionBG2 p-2 md:mx-3 md:h-[120px] md:min-w-[300px] md:rounded-r-[20px]"
         :key="client.id"
       >
-        <a :href="client.link" target="_blank">
+        <a :href="client.link" target="_blank" class="flex h-full items-center justify-center">
           <img
             :src="client.image"
             :alt="client.name"
-            class="max-h-full cursor-pointer object-contain transition-all duration-300 ease-in-out group-hover:scale-110"
+            class="max-h-[90%] cursor-pointer object-contain transition-all duration-300 ease-in-out group-hover:scale-110"
           />
         </a>
       </div>
     </Vue3Marquee>
-    <Vue3Marquee
-      :duration="100"
-      :pause-on-hover="false"
-      :direction="locale === 'en' ? 'reverse' : ''"
-      class="mt-6 overflow-hidden"
-    >
+    <Vue3Marquee :duration="100" :pause-on-hover="false" class="mt-6 overflow-hidden">
       <div
         v-for="client in Clients2"
-        class="group mx-3 flex h-[128px] items-center justify-center rounded-r-3xl bg-SectionBG2 p-6 md:h-[190px] md:min-w-[300px] md:rounded-r-[40px]"
+        class="group mx-1.5 flex h-[80px] items-center justify-center overflow-hidden rounded-l-2xl bg-SectionBG2 p-2 md:mx-3 md:h-[120px] md:min-w-[300px] md:rounded-l-[20px]"
         :key="client.id"
       >
-        <a :href="client.link" target="_blank">
+        <a :href="client.link" target="_blank" class="flex h-full items-center justify-center">
           <img
             :src="client.image"
             :alt="client.name"
-            class="max-h-full cursor-pointer object-contain transition-all duration-300 ease-in-out group-hover:scale-110"
+            class="max-h-[90%] cursor-pointer object-contain transition-all duration-300 ease-in-out group-hover:scale-110"
           />
         </a>
       </div>
     </Vue3Marquee>
 
-    <div class="mx-auto mt-10 w-fit">
+    <div class="mx-auto mt-8 w-fit">
       <nuxt-link :to="localePath('partners')">
         <button class="gradient-button hover:!bg-black hover:text-white">View All Partners</button>
       </nuxt-link>
@@ -55,7 +51,6 @@
 </template>
 
 <script setup lang="ts">
-const { locale } = useI18n();
 const localePath = useLocalePath();
 
 import artemide from '../../assets/img/Utils/clients/artemide.svg';

@@ -1,11 +1,9 @@
 <template>
   <section class="relative">
-    <div class="relative mx-auto max-w-[1328px] max-2xl:px-6">
+    <div class="relative mx-auto max-w-[1320px] max-2xl:px-6">
       <div class="md:hidden">
         <div class="mb-8 md:mb-14">
-          <h2 class="text-2xl font-medium uppercase sm:text-3xl md:text-4xl lg:text-6xl">
-            WHAT WE DO
-          </h2>
+          <h2 class="text-2xl font-semibold sm:text-3xl md:text-4xl">WHAT WE DO</h2>
         </div>
       </div>
 
@@ -29,22 +27,22 @@
         >
           <div class="">
             <div class="relative flex flex-col">
-              <div
-                class="flex min-h-[555px] flex-col rounded-l-[60px] bg-white shadow-xl md:rounded-l-[100px]"
-              >
+              <div class="flex flex-col rounded-l-[50px] bg-white shadow-xl md:rounded-l-[50px]">
                 <div class="w-full md:w-1/2">
                   <img
                     :src="project.src"
                     :alt="project.title"
-                    class="h-full w-full rounded-tl-[60px] object-cover md:rounded-l-[100px]"
+                    class="h-full w-full rounded-tl-[50px] object-cover md:rounded-l-[50px]"
                   />
                 </div>
-                <div class="flex w-full flex-col items-start justify-between gap-6 p-11 md:w-1/2">
-                  <h3 class="text-2xl font-medium text-primary sm:text-3xl md:text-4xl lg:text-6xl">
+                <div class="flex w-full flex-col items-start justify-between gap-6 p-7 md:w-1/2">
+                  <h3
+                    class="text-2xl font-semibold text-primary sm:text-3xl md:text-4xl lg:text-6xl"
+                  >
                     {{ project.number }}
                   </h3>
                   <div>
-                    <p class="mb-2 text-xl font-medium md:text-2xl lg:text-3xl">
+                    <p class="mb-2 text-xl font-semibold md:text-2xl lg:text-3xl">
                       {{ project.title }}
                     </p>
                     <p class="text-lg font-normal md:text-xl lg:text-2xl">
@@ -62,11 +60,11 @@
 </template>
 
 <script setup lang="ts">
-import INTERIORDESIGN from '../../assets/img/home/whatWeDo/INTERIORDESIGN.png';
-import FABRICSMATERIALS from '../../assets/img/home/whatWeDo/FABRICSMATERIALS.png';
-import INSTALLATION from '../../assets/img/home/whatWeDo/INSTALLATION.png';
-import KITCHENPLANNING from '../../assets/img/home/whatWeDo/KITCHENPLANNING.png';
-import HOMEAUTOMATION from '../../assets/img/home/whatWeDo/HOMEAUTOMATION.png';
+import INTERIORDESIGN from '../../assets/img/home/whatWeDo/INTERIORDESIGN.webp';
+import FABRICSMATERIALS from '../../assets/img/home/whatWeDo/FABRICSMATERIALS.webp';
+import INSTALLATION from '../../assets/img/home/whatWeDo/INSTALLATION.webp';
+import KITCHENPLANNING from '../../assets/img/home/whatWeDo/KITCHENPLANNING.webp';
+import HOMEAUTOMATION from '../../assets/img/home/whatWeDo/HOMEAUTOMATION.webp';
 
 const projects = [
   {

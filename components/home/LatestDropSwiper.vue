@@ -2,20 +2,20 @@
   <div class="pl-5">
     <swiper
       :modules="[Pagination]"
-      class="mySwiper rounded-l-[40px]"
+      class="mySwiper rounded-l-[20px]"
       :slides-per-view="'auto'"
       @swiper="onSwiperInit"
     >
       <swiper-slide
         v-for="(insight, index) in Insights"
         :key="index"
-        class="w-fit max-w-[582px] rounded-[40px]"
+        class="w-fit max-w-[582px] rounded-[20px]"
       >
-        <div class="relative h-[250px] max-h-[366px] rounded-[40px] sm:px-3 md:h-[366px]">
+        <div class="relative h-[250px] max-h-[366px] rounded-[20px] sm:px-3 md:h-[366px]">
           <img
             :src="insight.img"
             :alt="insight.title"
-            class="h-full w-full rounded-[40px] object-cover"
+            class="h-full w-full rounded-[20px] object-cover"
             loading="lazy"
           />
         </div>
@@ -64,20 +64,18 @@ const isEnd = ref(false);
 const onSwiperInit = (swiper: any) => {
   swiperInstance.value = swiper;
 
-  // أول تحديث
   isBeginning.value = swiper.isBeginning;
   isEnd.value = swiper.isEnd;
 
-  // كل ما يتحرك السلايدر
   swiper.on('slideChange', () => {
     isBeginning.value = swiper.isBeginning;
     isEnd.value = swiper.isEnd;
   });
 };
 import trend from '../../assets/img/home/latestDrop/trend.webp';
-import latestOne from '../../assets/img/home/latestDrop/latestOne.svg';
-import latestTwo from '../../assets/img/home/latestDrop/latestTwo.svg';
-import latestThree from '../../assets/img/home/latestDrop/latestThree.svg';
+import latestOne from '../../assets/img/home/latestDrop/latestOne.webp';
+import latestTwo from '../../assets/img/home/latestDrop/latestTwo.webp';
+import latestThree from '../../assets/img/home/latestDrop/latestThree.webp';
 
 const Insights = [
   {

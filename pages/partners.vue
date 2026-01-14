@@ -1,6 +1,6 @@
 <template>
   <main class="Partners">
-    <div class="container mx-auto max-w-[1328px] max-2xl:px-6">
+    <div class="container mx-auto max-w-[1320px] max-2xl:px-6">
       <h1
         class="my-12 text-center text-2xl font-semibold sm:text-3xl md:my-24 md:text-4xl lg:my-40 lg:text-[80px]"
       >

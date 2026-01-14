@@ -2,7 +2,7 @@
   <main>
     <ProjectsHeroSection />
 
-    <section class="mx-auto max-w-[1328px] max-2xl:px-6">
+    <section class="mx-auto max-w-[1320px] max-2xl:px-6">
       <div class="flex max-h-[590px] gap-4 max-md:flex-col md:gap-6">
         <div class="flex w-full flex-col gap-4 md:w-[55.94%] md:gap-6">
           <div class="flex gap-4 md:gap-6">
@@ -50,7 +50,7 @@
       </div>
     </section>
 
-    <section class="mx-auto max-w-[1328px] max-2xl:px-6">
+    <section class="mx-auto max-w-[1320px] max-2xl:px-6">
       <div class="flex max-h-[590px] gap-4 max-md:flex-col md:gap-6">
         <div class="">
           <div class="group relative h-full overflow-hidden rounded-[20px]">

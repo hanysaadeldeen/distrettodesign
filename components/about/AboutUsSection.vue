@@ -1,5 +1,5 @@
 <template>
-  <section class="AboutUsSection mx-auto max-w-[1328px] overflow-hidden max-2xl:px-6">
+  <section class="AboutUsSection mx-auto max-w-[1320px] overflow-hidden max-2xl:px-6">
     <div class="">
       <div class="flex w-full items-center justify-between gap-20 max-lg:flex-col">
         <div class="ml-5 w-full max-md:text-center lg:w-1/2 xl:ml-9 xl:max-w-[784px]">

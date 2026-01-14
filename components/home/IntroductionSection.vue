@@ -1,5 +1,5 @@
 <template>
-  <section class="Introduction mx-auto max-w-[1328px] overflow-hidden max-2xl:px-6">
+  <section class="Introduction mx-auto max-w-[1320px] overflow-hidden max-2xl:px-6">
     <div class="">
       <div class="flex w-full items-center justify-between gap-20 max-lg:flex-col-reverse">
         <div class="relative">

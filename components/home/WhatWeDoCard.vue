@@ -2,7 +2,7 @@
   <div ref="container" class="WhatWeDoCard sticky top-[30px] h-screen">
     <h2
       :class="i === 0 ? 'visible' : 'hide'"
-      class="pb-[56px] text-2xl font-medium uppercase sm:text-3xl md:text-4xl lg:text-5xl lg:text-6xl"
+      class="pb-10 text-2xl font-semibold sm:text-3xl md:text-4xl"
     >
       WHAT WE DO
     </h2>
@@ -11,19 +11,17 @@
       :class="i !== 0 && 'pt-[56]px'"
       :style="{ top: `calc( ${i * 30}px)` }"
     >
-      <div class="flex min-h-[555px] rounded-l-[100px] bg-white shadow-xl max-md:flex-col">
+      <div class="flex min-h-[455px] rounded-l-[100px] bg-white shadow-xl max-md:flex-col">
         <div class="w-full md:w-1/2">
-          <img :src="src" :alt="title" class="h-full w-full object-cover md:rounded-l-[100px]" />
+          <img :src="src" :alt="title" class="h-full w-full object-cover md:rounded-l-[80px]" />
         </div>
-        <div
-          class="flex w-full flex-col items-start justify-between gap-14 p-11 md:w-1/2 md:gap-20"
-        >
-          <h3 class="text-2xl font-medium text-primary sm:text-3xl md:text-4xl lg:text-6xl">
+        <div class="flex w-full flex-col items-start justify-between gap-14 p-7 md:w-1/2 md:gap-20">
+          <h3 class="text-2xl font-semibold text-primary sm:text-3xl md:text-5xl">
             {{ number }}
           </h3>
           <div>
-            <p class="mb-2 text-xl font-medium md:text-2xl lg:text-3xl">{{ title }}</p>
-            <p class="text-lg font-normal md:text-xl lg:text-2xl">
+            <p class="mb-2 text-xl font-semibold md:text-2xl lg:text-3xl">{{ title }}</p>
+            <p class="text-base font-normal md:text-lg lg:text-xl">
               {{ description }}
             </p>
           </div>

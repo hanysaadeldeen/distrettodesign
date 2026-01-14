@@ -1,13 +1,13 @@
 <template>
   <footer class="relative mt-6 rounded-tl-[80px] bg-black text-white md:rounded-tl-[100px]">
-    <section class="relative mx-auto max-w-[1328px]">
+    <section class="relative mx-auto max-w-[1320px]">
       <div class="container relative mx-auto max-2xl:px-6">
         <div class="absolute -top-10 right-0 hidden lg:block">
           <nuxt-link :to="localePath('index')" class="cursor-pointer">
             <img src="~/assets/img/Utils/footer.svg" alt="footer" />
           </nuxt-link>
         </div>
-        <div class="lg:py-20">
+        <div class="lg:py-16">
           <div class="flex justify-center lg:hidden">
             <nuxt-link :to="localePath('index')" class="cursor-pointer">
               <img
@@ -26,7 +26,7 @@
           </div>
           <div class="border-b border-white max-lg:text-center max-md:py-10 md:pb-12">
             <h2
-              class="mb-4 text-2xl font-medium max-lg:text-center sm:text-3xl md:mb-6 md:text-4xl lg:max-w-[529px] lg:text-[52px] lg:!leading-[52px]"
+              class="mb-4 text-2xl font-medium max-lg:text-center sm:text-3xl md:mb-6 md:text-4xl lg:max-w-[400px] lg:text-[42px] lg:!leading-[52px]"
             >
               SHAPING VISION INTO SPACES
             </h2>
@@ -36,7 +36,7 @@
             <div class="mt-6">
               <nav class="max-w-[435px]">
                 <ul
-                  class="flex flex-wrap gap-6 text-xl font-medium *:cursor-pointer *:text-white hover:*:text-primary max-lg:items-center max-lg:justify-center"
+                  class="flex flex-wrap gap-4 text-xl font-medium *:cursor-pointer *:text-white hover:*:text-primary max-lg:items-center max-lg:justify-center"
                 >
                   <li :class="adjustedPath === '/projects' ? 'active' : ''">
                     <nuxt-link :to="localePath('projects')"> Projects </nuxt-link>
@@ -44,7 +44,6 @@
                   <li :class="adjustedPath === '/about' ? 'active' : ''">
                     <nuxt-link :to="localePath('about')"> About </nuxt-link>
                   </li>
-
                   <li :class="adjustedPath === '/careers' ? 'active' : ''">
                     <nuxt-link :to="localePath('careers')"> Careers </nuxt-link>
                   </li>

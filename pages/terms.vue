@@ -1,6 +1,6 @@
 <template>
   <main class="terms relative mt-16 md:mt-24">
-    <div class="relative mx-auto max-w-[1328px]">
+    <div class="relative mx-auto max-w-[1320px]">
       <div class="container relative mx-auto px-2 max-sm:px-4">
         <div class="terms-page flex" :key="locale">
           <main class="content flex-1 lg:mr-32 lg:p-4">

@@ -1,8 +1,8 @@
 <template>
   <section class="Featured-projects bg-SectionBG">
-    <div class="container mx-auto max-w-[1328px] py-16 max-2xl:px-6 md:py-[120px]">
-      <div class="mb-14 flex items-center justify-between gap-4 max-sm:flex-col">
-        <SectionTitle title="FEATURED PROJECTS" class="text-center uppercase" />
+    <div class="container mx-auto max-w-[1320px] py-10 max-2xl:px-6 md:py-16 lg:py-20">
+      <div class="mb-7 flex items-center justify-between gap-4 max-sm:flex-col md:mb-10">
+        <SectionTitle title="OUR PROJECTS" />
         <nuxt-link to="/projects">
           <button class="gradient-button hover:!bg-black hover:text-white">
             View All Projects
@@ -52,7 +52,7 @@
           <div class="group relative overflow-hidden">
             <img
               src="~/assets/img/home/featured/FEATUREDGreen.svg"
-              class="transition-all duration-300 ease-in-out group-hover:scale-110"
+              class="w-full transition-all duration-300 ease-in-out group-hover:scale-110"
               alt="FEATUREDGreen"
               loading="lazy"
             />
@@ -111,21 +111,11 @@
   </section>
 </template>
 
-<script setup lang="ts">
-// 16:9
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
 .group,
 img {
-  border-radius: 40px;
-  /* cursor: pointer; */
-}
-
-@media (max-width: 768px) {
-  .group,
-  img {
-    border-radius: 20px;
-  }
+  border-radius: 20px;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container mx-auto max-w-[1328px] max-2xl:px-5">
+    <div class="container mx-auto max-w-[1320px] max-2xl:px-5">
       <SectionTitle title="MORE PROJECTS" class="mb-10 text-center md:mb-14" />
       <div class="flex gap-6 max-md:flex-col">
         <div class="group relative rounded-[40px]">
