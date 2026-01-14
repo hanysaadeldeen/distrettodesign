@@ -8,7 +8,7 @@
           </nuxt-link>
         </div>
         <div class="lg:py-16">
-          <div class="flex justify-center lg:hidden">
+          <div class="flex justify-center max-sm:mb-7 lg:hidden">
             <nuxt-link :to="localePath('index')" class="cursor-pointer">
               <img
                 src="~/assets/img/Utils/footer.svg"
@@ -19,7 +19,7 @@
               <img
                 src="~/assets/img/Utils/footer.svg"
                 alt="footer"
-                class="absolute -top-6"
+                class="absolute -top-6 max-sm:right-0"
                 loading="lazy"
               />
             </nuxt-link>
@@ -65,39 +65,12 @@
             <div
               class="mt-5 flex items-center gap-6 *:cursor-pointer *:text-xl *:text-white hover:*:text-primary max-lg:items-center max-lg:justify-center"
             >
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <div class="group">
-                <div class="block group-hover:hidden">
-                  <svg
-                    width="18"
-                    height="17"
-                    viewBox="0 0 18 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.1761 0.242676H16.9362L10.9061 7.02008L18 16.2427H12.4456L8.0951 10.6493L3.11723 16.2427H0.35544L6.80517 8.99348L0 0.242676H5.69545L9.6279 5.3553L14.1761 0.242676ZM13.2073 14.6181H14.7368L4.86441 1.78196H3.2232L13.2073 14.6181Z"
-                      fill=" white "
-                    />
-                  </svg>
-                </div>
-                <div class="hidden group-hover:block">
-                  <svg
-                    width="18"
-                    height="17"
-                    viewBox="0 0 18 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.1761 0.242676H16.9362L10.9061 7.02008L18 16.2427H12.4456L8.0951 10.6493L3.11723 16.2427H0.35544L6.80517 8.99348L0 0.242676H5.69545L9.6279 5.3553L14.1761 0.242676ZM13.2073 14.6181H14.7368L4.86441 1.78196H3.2232L13.2073 14.6181Z"
-                      fill="#A36316"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://www.instagram.com/distrettodesignofficial/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://wa.me/+966552554005" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
             </div>
           </div>
           <div

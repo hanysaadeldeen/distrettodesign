@@ -1,13 +1,13 @@
 <template>
   <main class="overflow-hidden">
-    <div class="container mx-auto max-w-[1320px] max-2xl:px-6">
-      <div class="mt-24 lg:my-40">
+    <div class="container mx-auto max-w-[1320px] max-2xl:px-6 md:mb-[63px]">
+      <div>
         <h1
-          class="text-center text-2xl font-semibold sm:text-3xl md:text-4xl lg:text-[80px] lg:!leading-[80px]"
+          class="mt-12 text-center text-2xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl lg:!leading-[73px]"
         >
           Want to join us ?
         </h1>
-        <p class="mx-auto mt-4 max-w-[624px] text-center text-2xl font-normal">
+        <p class="mx-auto mt-4 text-center text-lg font-normal sm:text-xl md:text-2xl">
           Your talent deserves a space to grow
         </p>
         <div @click="scrollToSection('ourRoles')">

@@ -1,18 +1,22 @@
 <template>
   <section class="ourRoles" id="ourRoles">
     <div class="container mx-auto max-w-[1320px] max-2xl:px-6">
-      <div class="mb-8 md:mb-14">
+      <div class="mb-7 md:mb-10">
         <SectionTitle title="OUR ROLES" class="uppercase" />
       </div>
       <div class="grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-x-6 md:gap-y-8">
         <div
-          class="rounded-[40px] bg-SectionBG p-7 lg:p-10"
+          class="rounded-3xl bg-SectionBG p-7 lg:p-10"
           v-for="position in Positions"
           :key="position.id"
         >
-          <h1 class="text-2xl font-medium lg:text-3xl">{{ position.title }}</h1>
-          <p class="my-4 text-lg font-normal lg:my-5 lg:text-xl">{{ position.description }}</p>
-          <div class="flex gap-5 text-[#333333]">
+          <h3 class="mb-2 text-xl font-semibold md:text-2xl lg:text-2xl">
+            {{ position.title }}
+          </h3>
+          <p class="my-4 text-base font-normal md:text-lg lg:my-5 lg:text-xl">
+            {{ position.description }}
+          </p>
+          <div class="flex flex-wrap gap-2 text-[#333333]">
             <div class="flex items-center gap-2 rounded-full border border-[#333333] px-3 py-2">
               <svg
                 width="21"

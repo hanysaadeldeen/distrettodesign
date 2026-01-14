@@ -6,7 +6,7 @@
           <img src="~/assets/img/career/careersPattern.svg" alt="careersPattern" />
         </div>
         <div
-          class="relative rounded-l-[60px] bg-primary py-8 pl-8 sm:py-14 sm:pl-14 md:py-20 lg:rounded-l-[100px] xl:py-32 xl:pl-[132px]"
+          class="relative rounded-l-[50px] bg-primary py-6 pl-8 sm:pl-14 md:py-8 lg:rounded-l-[80px] xl:pl-16"
         >
           <div class="relative w-full text-white md:max-w-[922px]">
             <SectionTitle
@@ -14,7 +14,7 @@
               class="mb-4 uppercase md:mb-6 lg:!leading-[73px]"
             />
           </div>
-          <div class="mt-6 lg:mt-10 xl:mt-40">
+          <div class="mt-6">
             <SwiperWorkWithUs />
           </div>
         </div>

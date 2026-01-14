@@ -1,12 +1,12 @@
 <template>
   <div class="ProjectsHeroSection overflow-hidden">
-    <div class="relative pl-8 2xl:pl-[calc((100%-1512px)/2)]">
+    <div class="relative pl-8 2xl:pl-[calc((100%-1320px)/2)]">
       <div
-        class="imgCta relative rounded-l-[60px] py-24 pl-10 pr-5 sm:pl-14 md:py-32 md:pl-20 lg:rounded-l-[100px] xl:px-[132px] xl:py-52"
+        class="imgCta relative rounded-l-[50px] py-24 pl-10 pr-5 sm:pl-14 md:py-32 md:pl-20 lg:rounded-l-[80px] lg:py-40 xl:px-[132px]"
       ></div>
       <div class="absolute left-0 top-0 mx-auto flex h-full w-full items-center justify-center">
         <h1
-          class="relative z-30 text-center text-2xl font-medium uppercase text-white sm:text-3xl md:text-4xl lg:text-5xl lg:!leading-[73px]"
+          class="relative z-30 text-center text-2xl font-medium text-white sm:text-3xl md:text-4xl lg:text-5xl"
         >
           OUR PROJECTS
         </h1>

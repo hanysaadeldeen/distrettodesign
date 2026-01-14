@@ -3,15 +3,15 @@
     <div class="">
       <div class="flex w-full items-center justify-between gap-20 max-lg:flex-col">
         <div class="ml-5 w-full max-md:text-center lg:w-1/2 xl:ml-9 xl:max-w-[784px]">
-          <h3 class="mb-6 text-2xl font-normal lg:text-3xl lg:!leading-[44.8px]">
+          <h2 class="mb-6 text-2xl font-normal lg:text-3xl lg:!leading-[44.8px]">
             We operate as both retail and a design and project management service, from its studio
             and showroom in Jeddah.
-          </h3>
-          <h3 class="text-2xl font-normal lg:text-3xl lg:!leading-[44.8px]">
+          </h2>
+          <h2 class="text-2xl font-normal lg:text-3xl lg:!leading-[44.8px]">
             Our showroom is not just a store, it is a place of your comfort, where we have a
             fascinating mix of products, ideas, people and services offering complete solutions for
             your ideal internal and external spaces.
-          </h3>
+          </h2>
         </div>
         <div class="relative">
           <div

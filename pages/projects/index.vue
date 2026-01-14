@@ -44,9 +44,9 @@
         </div>
       </div>
       <div class="mt-4 max-w-[450px] md:mt-8">
-        <h1 class="text-2xl font-medium md:text-3xl lg:text-4xl">
+        <h2 class="text-2xl font-medium md:text-3xl lg:text-4xl">
           King Fahd International Airport
-        </h1>
+        </h2>
       </div>
     </section>
 
@@ -74,11 +74,9 @@
         </div>
       </div>
       <div class="mt-4 max-w-[450px] md:mt-8">
-        <h1 class="text-2xl font-medium md:text-3xl lg:text-4xl">Ibis and Adajio Hotels</h1>
+        <h2 class="text-2xl font-medium md:text-3xl lg:text-4xl">Ibis and Adajio Hotels</h2>
       </div>
     </section>
-    <!-- <ProjectFilter />
-    <ProjectSection /> -->
     <ProjectCTASection />
   </main>
 </template>

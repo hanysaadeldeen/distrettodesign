@@ -1,25 +1,23 @@
 <template>
   <section class="relative">
     <div class="absolute left-0 top-0 h-full w-full bg-[#000000] opacity-70"></div>
-    <div
-      class="container relative z-20 mx-auto max-w-[1320px] py-14 max-2xl:px-6 lg:py-20 xl:py-[90px]"
-    >
-      <div class="grid grid-cols-1 gap-8 text-white sm:grid-cols-2 lg:grid-cols-3 lg:gap-11">
+    <div class="container relative z-20 mx-auto max-w-[1320px] py-14 max-2xl:px-6 lg:py-20">
+      <div
+        class="grid grid-cols-1 gap-4 text-white sm:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8"
+      >
         <div
-          class="flex cursor-pointer flex-col rounded-3xl px-2 py-8 transition-all duration-300 ease-in-out hover:bg-primary md:rounded-[40px] md:py-14"
+          class="flex cursor-pointer flex-col rounded-3xl px-6 py-6 transition-all duration-300 ease-in-out hover:bg-primary md:px-4 md:py-8"
           v-for="value in Values"
           :key="value.id"
         >
-          <div
-            class="mx-auto flex w-fit items-center justify-center rounded-3xl bg-secondary p-4 md:p-5"
-          >
-            <img :src="value.icons" :alt="value.title" class="max-md:max-w-[32px]" />
+          <div class="mx-auto flex w-fit items-center justify-center rounded-2xl bg-secondary p-3">
+            <img :src="value.icons" :alt="value.title" class="size-8 md:size-10" />
           </div>
-          <div class="mx-auto mt-8 max-w-[408px] md:mt-12">
-            <h1 class="mb-2 text-center text-xl font-medium md:mb-4 md:text-2xl lg:text-3xl">
+          <div class="mx-auto mt-4 md:mt-6">
+            <h3 class="mb-2 text-center text-xl font-semibold md:mb-4 md:text-2xl">
               {{ value.title }}
-            </h1>
-            <p class="text-center text-lg font-normal md:text-xl lg:text-2xl">
+            </h3>
+            <p class="text-center text-lg font-medium md:text-xl">
               {{ value.description }}
             </p>
           </div>

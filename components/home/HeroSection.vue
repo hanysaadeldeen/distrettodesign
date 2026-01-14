@@ -23,7 +23,7 @@
       </Swiper>
     </div>
     <div class="flex h-full flex-col justify-between">
-      <div class="mx-auto w-full max-w-[1512px]">
+      <div class="mx-auto w-full max-w-[1320px]">
         <div class="mr-auto h-full w-fit overflow-hidden px-6">
           <h1
             class="sr-only relative z-10 pt-16 text-4xl font-semibold text-white sm:text-5xl md:text-7xl lg:pt-[110px] lg:text-[80px] lg:!leading-[90px]"

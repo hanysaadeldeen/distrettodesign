@@ -4,7 +4,7 @@
     :dir="locale === 'ar' ? 'rtl' : 'ltr'"
     :class="[{ 'overflow-hidden': isSideBar }]"
   >
-    <div class="mx-auto w-full rounded-2xl bg-white/15 px-4 py-2 md:max-w-[1512px] md:px-6 md:py-4">
+    <div class="mx-auto w-full rounded-2xl bg-white/15 px-4 py-2 md:max-w-[1320px] md:px-6 md:py-4">
       <div class="relative z-40">
         <div class="flex items-center justify-between">
           <nuxt-link :to="localePath('index')" class="relative block">

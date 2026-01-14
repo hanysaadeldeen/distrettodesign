@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
     <swiper
       :modules="[Pagination]"
       class="mySwiper rounded-l-[40px]"
@@ -13,25 +13,20 @@
         class="flex h-full w-fit max-w-[582px] items-stretch rounded-[40px]"
       >
         <div
-          class="relative flex h-full flex-1 flex-col rounded-[40px] bg-secondary p-6 md:h-[283px] lg:p-8"
+          class="relative flex h-full flex-1 flex-col rounded-[40px] bg-secondary p-4 md:h-[283px] lg:p-6"
         >
-          <img
-            :src="insight.img"
-            :alt="insight.alt"
-            class="max-w-12 max-md:size-8"
-            loading="lazy"
-          />
-          <h2 class="mb-2 mt-4 text-xl font-medium md:text-2xl lg:mt-8 lg:text-3xl">
+          <img :src="insight.img" :alt="insight.alt" class="size-10" loading="lazy" />
+          <h3 class="mb-2 mt-4 text-xl font-semibold md:text-2xl lg:mt-6 lg:text-2xl">
             {{ insight.title }}
-          </h2>
-          <p class="text-base font-normal lg:text-xl">{{ insight.description }}</p>
+          </h3>
+          <p class="text-base font-normal md:text-lg lg:text-xl">{{ insight.description }}</p>
         </div>
       </swiper-slide>
     </swiper>
-    <div class="mt-4 hidden justify-center gap-4 max-md:flex md:mt-6 md:gap-6 lg:mt-10">
+    <div class="mt-6 flex justify-center gap-4 md:gap-6">
       <div
         @click="!isBeginning && swiperInstance?.slidePrev()"
-        class="cursor-pointer rounded-full border-[1.8px] p-4 md:p-5"
+        class="h-fit cursor-pointer rounded-full border-[1.8px] p-4"
         :class="[
           'border-secondary',
           isBeginning ? 'cursor-not-allowed border-[#a36416b6] opacity-70' : '',
@@ -52,7 +47,7 @@
       </div>
       <div
         @click="!isEnd && swiperInstance?.slideNext()"
-        class="cursor-pointer rounded-full border-[1.8px] p-4 md:p-5"
+        class="h-fit cursor-pointer rounded-full border-[1.8px] p-4"
         :class="[
           'border-secondary',
           isEnd ? 'cursor-not-allowed border-[#a36416b6] opacity-70' : '',

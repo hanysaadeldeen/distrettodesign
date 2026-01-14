@@ -4,10 +4,12 @@
       <div
         class="flex items-center justify-between gap-10 rounded-[40px] bg-SectionBG2 p-8 max-xl:flex-col md:p-10 xl:p-[60px]"
       >
-        <div class="">
-          <h1 class="mb-4 text-4xl font-medium max-xl:text-center sm:text-5xl lg:text-6xl">
+        <div>
+          <h2
+            class="mb-4 text-2xl font-semibold max-xl:text-center sm:text-3xl md:text-4xl lg:text-5xl"
+          >
             OUR STATS
-          </h1>
+          </h2>
           <p class="text-xl font-medium text-[#333333] max-xl:text-center md:text-2xl">
             The numbers behind our legacy
           </p>
@@ -17,7 +19,7 @@
         >
           <div v-for="(stat, index) in stats" :key="index" ref="counterElements">
             <div class="space-y-4">
-              <h1 class="number">{{ stat.value }}+</h1>
+              <h3 class="number">{{ stat.value }}+</h3>
               <p class="numberTitle">{{ stat.text }}</p>
             </div>
           </div>
@@ -94,10 +96,10 @@ onMounted(() => {
 
 <style scoped>
 .number {
-  @apply text-center text-5xl font-semibold text-primary lg:text-6xl xl:text-7xl;
+  @apply text-center text-2xl font-semibold text-primary sm:text-3xl md:text-4xl lg:text-5xl;
 }
 
 .numberTitle {
-  @apply text-center text-xl font-normal md:text-2xl lg:text-3xl;
+  @apply text-center text-xl font-medium md:text-2xl;
 }
 </style>

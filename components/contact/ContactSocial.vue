@@ -1,10 +1,6 @@
 <template>
-  <div class="flex flex-wrap items-start justify-center gap-8 lg:gap-11">
-    <div
-      v-for="value in Contact"
-      :key="value.id"
-      class="flex flex-col rounded-3xl px-2 py-8 md:rounded-[40px] md:py-14"
-    >
+  <section class="flex flex-wrap items-start justify-center gap-8">
+    <div v-for="value in Contact" :key="value.id" class="flex flex-col rounded-3xl px-2">
       <component
         :is="value.link ? 'a' : 'div'"
         :href="value.link || undefined"
@@ -14,19 +10,19 @@
         class="mx-auto flex max-w-[408px] cursor-pointer flex-col items-center text-center"
       >
         <div
-          class="mx-auto flex w-fit items-center justify-center rounded-3xl bg-secondary p-4 md:p-5"
+          class="mx-auto mb-6 flex w-fit items-center justify-center rounded-2xl bg-secondary p-4"
         >
-          <img :src="value.icons" :alt="`${value.title} icon`" class="max-md:max-w-[32px]" />
+          <img :src="value.icons" :alt="`${value.title} icon`" class="size-8" />
         </div>
-        <h2 class="mb-2 mt-8 text-xl font-medium md:mb-4 md:mt-12 md:text-2xl lg:text-3xl">
+        <h3 class="mb-2 text-center text-xl font-semibold md:mb-4 md:text-2xl">
           {{ value.title }}
-        </h2>
-        <p class="text-lg font-normal md:text-xl lg:text-2xl">
+        </h3>
+        <p class="text-center text-lg font-medium md:text-xl">
           {{ value.description }}
         </p>
       </component>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -47,16 +43,16 @@ const Contact = [
   {
     id: 2,
     title: 'Phone',
-    description: '(+966) 126829184',
+    description: '+966 552 554 005',
     icons: phone,
-    link: 'tel:966126829184',
+    link: 'tel:+966126829184',
   },
   {
     id: 3,
     title: 'Fax',
-    description: '(+966) 126826824',
+    description: '(+966) 552 554 005',
     icons: Fax,
-    link: '', // no link
+    link: '',
   },
   {
     id: 4,

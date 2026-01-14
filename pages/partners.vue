@@ -2,11 +2,11 @@
   <main class="Partners">
     <div class="container mx-auto max-w-[1320px] max-2xl:px-6">
       <h1
-        class="my-12 text-center text-2xl font-semibold sm:text-3xl md:my-24 md:text-4xl lg:my-40 lg:text-[80px]"
+        class="mt-12 text-center text-2xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl lg:!leading-[73px]"
       >
         OUR PARTNERS
       </h1>
-      <div class="grid grid-cols-2 items-stretch gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
+      <section class="grid grid-cols-2 items-stretch gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
         <div
           v-for="client in Clients"
           class="group flex h-[128px] items-center justify-center rounded-l-3xl bg-SectionBG2 p-6 md:h-[228px] md:rounded-l-[40px]"
@@ -20,7 +20,7 @@
             />
           </a>
         </div>
-      </div>
+      </section>
     </div>
   </main>
 </template>

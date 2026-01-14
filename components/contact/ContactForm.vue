@@ -1,11 +1,9 @@
 <template>
-  <section
-    class="form flex gap-10 rounded-[60px] bg-SectionBG p-6 max-lg:flex-col md:p-10 lg:p-[60px]"
-  >
+  <section class="form flex gap-10 rounded-[50px] bg-SectionBG p-6 max-lg:flex-col md:p-10">
     <div class="relative flex-1 lg:min-w-[400px]">
-      <h1 class="mb-6 text-2xl font-medium max-lg:text-center md:mb-10 md:text-3xl lg:text-5xl">
+      <h2 class="mb-6 text-2xl font-semibold max-lg:text-center sm:text-3xl md:mb-10 md:text-4xl">
         Don’t hesitate to reach out
-      </h1>
+      </h2>
 
       <Form
         @submit="onSubmit"
@@ -75,30 +73,26 @@
           <span class="text-sm text-red-500">{{ errors.message }}</span>
         </div>
 
-        <h1 class="mt-6 text-xl font-normal lg:mt-8 lg:text-2xl">
+        <h3 class="mt-6 text-lg font-normal md:text-xl lg:mt-8 lg:text-xl">
           By sending inquiry, you agree to our <nuxt-link to="privacy" class="underline">
             Privacy Policy.</nuxt-link
           >
-        </h1>
+        </h3>
         <div class="sm:mr-auto sm:w-fit">
-          <button
-            type="submit"
-            :disabled="isLoading"
-            class="gradient-buttonTwo mt-4 w-full lg:mt-10"
-          >
+          <button type="submit" :disabled="isLoading" class="gradient-buttonTwo mt-6 w-full">
             Send Message
           </button>
         </div>
       </Form>
     </div>
-    <div class="relative flex w-full max-w-[604px] flex-col rounded-[40px]">
+    <div class="relative flex w-full max-w-[604px] flex-col rounded-3xl max-lg:h-[300px]">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4440.142718409408!2d39.1429966!3d21.562991900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3db53648e937b%3A0x2115491c6c29660c!2sDistretto%20Design!5e1!3m2!1sen!2seg!4v1760879059779!5m2!1sen!2seg"
         style="border: 0"
         allowfullscreen="true"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        class="h-full w-full rounded-[40px]"
+        class="h-full w-full rounded-3xl"
       ></iframe>
     </div>
   </section>
@@ -110,7 +104,6 @@ import * as yup from 'yup';
 const { locale } = useI18n();
 
 const isLoading = ref(false);
-// import { useEmail } from "~/composables/useEmail";
 const schema = yup.object({
   FullName: yup
     .string()
