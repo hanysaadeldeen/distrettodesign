@@ -6,12 +6,12 @@
           <main class="content flex-1 lg:mr-32 lg:p-4">
             <div class="flex flex-col">
               <h1
-                class="mb-4 text-2xl font-semibold sm:text-3xl md:text-4xl lg:text-[80px] lg:!leading-[80px]"
+                class="mt-12 text-2xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl lg:!leading-[73px]"
               >
                 Privacy Policy
               </h1>
               <p class="mb-5 text-xl font-normal">Last updated: June 2025</p>
-              <p class="mb-14 text-xl font-normal md:text-2xl">
+              <p class="mb-14 text-lg font-normal sm:text-xl md:text-2xl">
                 At Distretto Design, we are committed to protecting your privacy and ensuring that
                 your personal information is handled with care and transparency.
               </p>

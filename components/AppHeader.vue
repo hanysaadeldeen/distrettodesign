@@ -20,7 +20,10 @@
           </nuxt-link>
           <nav class="relative hidden text-white lg:block">
             <div class="blob bg-primary" aria-hidden="true"></div>
-            <ul class="flex gap-10" :class="adjustedPath !== '/' ? 'text-black' : ''">
+            <ul
+              class="flex gap-4 xl:gap-6 2xl:gap-10"
+              :class="adjustedPath !== '/' ? 'text-black' : ''"
+            >
               <li :class="adjustedPath === '/about' ? 'active' : ''">
                 <nuxt-link :to="localePath('about')"> About </nuxt-link>
               </li>

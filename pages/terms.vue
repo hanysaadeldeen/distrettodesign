@@ -6,12 +6,12 @@
           <main class="content flex-1 lg:mr-32 lg:p-4">
             <div class="flex flex-col">
               <h1
-                class="mb-4 text-2xl font-semibold sm:text-3xl md:text-4xl lg:text-[80px] lg:!leading-[80px]"
+                class="mt-12 text-2xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl lg:!leading-[73px]"
               >
                 Terms of Service
               </h1>
               <p class="mb-5 text-xl font-normal">Last updated: June 2025</p>
-              <p class="mb-14 text-xl font-normal md:text-2xl">
+              <p class="mb-14 text-lg font-normal sm:text-xl md:text-2xl">
                 Welcome to Distretto Design. By using our website, you agree to the following terms.
                 Please read them carefully.
               </p>
@@ -21,7 +21,7 @@
               v-for="(section, index) in sections"
               :id="section.id"
               :key="index"
-              class="mb-8 lg:mb-14"
+              class="mb-6 lg:mb-10"
             >
               <h2 class="mb-4 text-xl font-medium md:text-2xl lg:text-3xl">
                 {{ $t(section.title) }}:
@@ -30,9 +30,6 @@
                 <p class="text-base font-normal md:text-lg">
                   {{ $t(section.description) }}
                 </p>
-                <!-- <nuxt-link to="contact">
-                  <span v-if="section.id === 'contact-us'" class="font-bold mx-1"> Contact Us</span>
-                </nuxt-link> -->
               </div>
             </div>
           </main>
