@@ -77,11 +77,35 @@
         <h2 class="text-2xl font-medium md:text-3xl lg:text-4xl">Ibis and Adajio Hotels</h2>
       </div>
     </section>
+
+    <section
+      v-for="project in projects"
+      :key="project.id"
+      class="mx-auto max-w-[1320px] max-2xl:px-6"
+    >
+      <h2 class="text-3xl font-bold">{{ project.title }}</h2>
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div
+          class="group relative overflow-hidden rounded-2xl bg-green-500"
+          v-for="item in project.images"
+        >
+          <img
+            :src="item"
+            :alt="project.title"
+            class="object-cover transition-all duration-300 ease-in-out group-hover:scale-110"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
     <ProjectCTASection />
   </main>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { projects } from '../../ProjectsData/data';
+</script>
 
 <style scoped>
 .group,
