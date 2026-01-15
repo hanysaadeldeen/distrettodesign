@@ -44,6 +44,16 @@ export default defineNuxtConfig({
           content:
             'Distretto Design creates stylish interiors and offers luxury furniture from top European brands. Since 2015, we have been designing unique spaces with elegance and creativity.',
         },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        {
+          property: 'og:image',
+          content: 'https://distrettodesign.com/LogoTap.png',
+        },
+        {
+          name: 'twitter:image',
+          content: 'https://distrettodesign.com/LogoTap.png',
+        },
       ],
     },
   },
