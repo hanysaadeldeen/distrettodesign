@@ -10,7 +10,7 @@ export const projects: Project[] = [
     id: 'dallah-albaraka',
     title: 'Dallah Albaraka',
     images: [
-      '/Projects/images/Dallah Albaraka/Dallah Albaraka (1).jpg',
+      '/Projects/images/Dallah AlbarakaOne.jpg',
       '/Projects/images/Dallah Albaraka/Dallah Albaraka (2).jpg',
       '/Projects/images/Dallah Albaraka/Dallah Albaraka (3).jpg',
       '/Projects/images/Dallah Albaraka/Dallah Albaraka (4).jpg',
