@@ -2,7 +2,7 @@
   <main>
     <ProjectsHeroSection />
 
-    <section class="mx-auto max-w-[1320px] max-2xl:px-6">
+    <!-- <section class="mx-auto max-w-[1320px] max-2xl:px-6">
       <div class="flex max-h-[590px] gap-4 max-md:flex-col md:gap-6">
         <div class="flex w-full flex-col gap-4 md:w-[55.94%] md:gap-6">
           <div class="flex gap-4 md:gap-6">
@@ -76,28 +76,24 @@
       <div class="mt-4 max-w-[450px] md:mt-8">
         <h2 class="text-2xl font-medium md:text-3xl lg:text-4xl">Ibis and Adajio Hotels</h2>
       </div>
-    </section>
+    </section> -->
 
     <section
-      v-for="project in projects"
+      v-for="project in projects.slice(0, projectsCount)"
       :key="project.id"
       class="mx-auto max-w-[1320px] max-2xl:px-6"
     >
-      <h2 class="text-3xl font-bold">{{ project.title }}</h2>
-      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <div
-          class="group relative overflow-hidden rounded-2xl bg-green-500"
-          v-for="item in project.images"
-        >
-          <img
-            :src="item"
-            :alt="project.title"
-            class="object-cover transition-all duration-300 ease-in-out group-hover:scale-110"
-            loading="lazy"
-          />
-        </div>
-      </div>
+      <CoverflowCarousel :project="project" />
     </section>
+
+    <div class="mt-10 text-center">
+      <button
+        class="gradient-button hover:!bg-black hover:text-white"
+        @click="projectsCount = projectsCount + 5"
+      >
+        Show More
+      </button>
+    </div>
 
     <ProjectCTASection />
   </main>
@@ -105,11 +101,23 @@
 
 <script setup lang="ts">
 import { projects } from '../../ProjectsData/data';
+
+const projectsCount = ref(5);
 </script>
 
 <style scoped>
 .group,
 img {
   border-radius: 20px;
+}
+
+section {
+  margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  section {
+    margin-top: 50px;
+  }
 }
 </style>
