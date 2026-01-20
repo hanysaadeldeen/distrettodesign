@@ -6,7 +6,7 @@
       ></div>
       <div class="absolute left-0 top-0 mx-auto flex h-full w-full items-center justify-center">
         <h1
-          class="relative z-30 text-center text-2xl font-semibold text-white sm:text-3xl md:text-4xl lg:text-5xl"
+          class="relative text-center text-2xl font-semibold text-white sm:text-3xl md:text-4xl lg:text-5xl"
         >
           OUR PROJECTS
         </h1>
