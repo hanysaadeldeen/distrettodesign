@@ -63,13 +63,19 @@
               </nav>
             </div>
             <div
-              class="mt-5 flex items-center gap-6 *:cursor-pointer *:text-xl *:text-white hover:*:text-primary max-lg:items-center max-lg:justify-center"
+              class="mt-5 flex items-center gap-3 *:cursor-pointer *:text-xl *:text-white hover:*:text-primary max-lg:items-center max-lg:justify-center"
             >
               <a href="https://www.instagram.com/distrettodesignofficial/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
+                <LucideInstagram :size="30" :stroke-width="2.75" />
               </a>
               <a href="https://wa.me/+966552554005" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
+                <img
+                  src="~/assets/img/whatsApp.svg"
+                  alt="whatsApp"
+                  width="40px"
+                  height="40px"
+                  class="h-10 w-10"
+                />
               </a>
             </div>
           </div>

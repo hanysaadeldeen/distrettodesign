@@ -35,7 +35,7 @@
       </div>
 
       <div
-        class="relative z-10 ml-auto flex w-fit rounded-tl-[24px] bg-white px-6 pt-6 md:rounded-tl-[36px] lg:rounded-tl-[50px] lg:px-8 lg:pt-8"
+        class="relative z-10 ml-auto flex w-fit rounded-tl-[24px] bg-white px-6 pt-6 max-lg:hidden md:rounded-tl-[36px] lg:rounded-tl-[50px] lg:px-8 lg:pt-8"
       >
         <div class="absolute -left-[90px] bottom-0">
           <img src="~/assets/img/home/heroSection/test.svg" class="" alt="homeArrow" />

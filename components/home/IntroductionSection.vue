@@ -1,5 +1,9 @@
 <template>
   <section class="Introduction mx-auto max-w-[1320px] overflow-hidden max-2xl:px-6">
+    <!-- <LucideRocket />
+    <LucideFolderGit2 color="red" />
+    <LucideGithub :size="32" /> -->
+
     <div class="">
       <div class="flex w-full items-center justify-between gap-20 max-lg:flex-col-reverse">
         <div class="relative">

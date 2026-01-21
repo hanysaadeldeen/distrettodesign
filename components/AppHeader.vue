@@ -50,15 +50,18 @@
             </nuxt-link>
           </div>
           <div class="cursor-pointer text-2xl sm:text-3xl lg:hidden">
-            <i
-              class="fa-solid fa-bars-staggered"
+            <LucideMenu
+              :size="32"
+              :stroke-width="2.75"
+              @click="toggleSidebar"
               :class="[{ hidden: isSideBar }, adjustedPath === '/' ? 'text-white' : 'text-black']"
-              @click="toggleSidebar"
             />
-            <i
-              class="fa-solid fa-xmark text-white"
-              :class="[{ hidden: !isSideBar }, adjustedPath === '/' ? 'text-white' : 'text-black']"
+            <LucideX
+              :size="32"
+              :stroke-width="2.75"
+              class="text-white"
               @click="toggleSidebar"
+              :class="[{ hidden: !isSideBar }, adjustedPath === '/' ? 'text-white' : 'text-black']"
             />
           </div>
         </div>

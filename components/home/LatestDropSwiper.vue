@@ -23,28 +23,32 @@
     </swiper>
     <div class="mt-6 flex gap-4 md:mt-10 md:gap-6">
       <div
-        class="group flex h-[52px] w-[52px] cursor-pointer items-center justify-center rounded-full border-[1.8px] p-4 md:p-5"
+        class="group flex h-[42px] w-[42px] cursor-pointer items-center justify-center rounded-full border-[1.8px] md:h-[52px] md:w-[52px]"
         :class="[
           'border-primary transition-all duration-300 ease-in-out hover:border-black',
           isBeginning ? 'cursor-not-allowed border-[#a36416b6] opacity-70' : '',
         ]"
         @click="!isBeginning && swiperInstance?.slidePrev()"
       >
-        <i
-          class="fa-solid fa-arrow-left text-primary transition-all duration-300 ease-in-out group-hover:text-black"
-        ></i>
+        <LucideChevronLeft
+          :size="32"
+          :stroke-width="2.75"
+          class="text-primary transition-all duration-300 ease-in-out group-hover:text-black"
+        />
       </div>
       <div
-        class="group flex h-[52px] w-[52px] cursor-pointer items-center justify-center rounded-full border-[1.8px] p-4 md:p-5"
+        class="group flex h-[42px] w-[42px] cursor-pointer items-center justify-center rounded-full border-[1.8px] md:h-[52px] md:w-[52px]"
         :class="[
           'border-primary transition-all duration-300 ease-in-out hover:border-black',
           isEnd ? 'cursor-not-allowed border-[#a36416b6] opacity-70' : '',
         ]"
         @click="!isEnd && swiperInstance?.slideNext()"
       >
-        <i
-          class="fa-solid fa-arrow-right text-primary transition-all duration-300 ease-in-out group-hover:text-black"
-        ></i>
+        <LucideChevronRight
+          :size="32"
+          :stroke-width="2.75"
+          class="text-primary transition-all duration-300 ease-in-out group-hover:text-black"
+        />
       </div>
     </div>
   </div>
