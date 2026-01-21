@@ -35,19 +35,19 @@
       </div>
 
       <div
-        class="relative z-10 ml-auto flex w-fit rounded-tl-[24px] bg-white px-6 pt-6 max-lg:hidden md:rounded-tl-[36px] lg:rounded-tl-[50px] lg:px-8 lg:pt-8"
+        class="relative z-10 ml-auto flex w-fit rounded-tl-[28px] bg-white py-6 pl-6 max-lg:hidden"
       >
         <div class="absolute -left-[90px] bottom-0">
           <img src="~/assets/img/home/heroSection/test.svg" class="" alt="homeArrow" />
         </div>
         <nuxt-link :to="localePath('projects')">
           <div
-            class="relative w-fit cursor-pointer rounded-l-[24px] bg-primary px-16 py-3 transition-all duration-300 ease-in-out hover:bg-black md:rounded-l-[36px] lg:rounded-l-[40px] lg:px-28"
+            class="relative w-fit cursor-pointer rounded-l-[28px] bg-primary px-16 py-3 transition-all duration-300 ease-in-out hover:bg-black lg:px-24"
           >
             <div>
               <img
                 src="~/assets/img/home/heroSection/homeArrow.svg"
-                class="animate-translateXLoop max-md:size-14 md:size-20 lg:size-28"
+                class="animate-translateXLoop h-[70px] w-20"
                 alt="homeArrow"
               />
             </div>

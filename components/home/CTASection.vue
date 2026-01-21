@@ -13,7 +13,7 @@
             class="mb-4 lg:!leading-[50px]"
           />
           <p class="w-full text-base font-normal text-white sm:text-xl md:text-2xl">
-            Whether you're designing a palace, airport, or something uniquely yours — Destritto is
+            Whether you're designing a palace, airport, or something uniquely yours — Distretto is
             your partner in creating environments that leave a legacy.
           </p>
           <nuxt-link to="/contact">
