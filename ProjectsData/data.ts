@@ -110,8 +110,8 @@ export const projects: Project[] = [
   },
 
   {
-    id: 'ibis-and-adajio-hotels',
-    title: 'Ibis and Adajio Hotels',
+    id: 'ibis-and-Adiago-hotels',
+    title: 'Ibis and Adiago Hotels',
     images: [
       '/images/Ibis and Adajio Hotels/Ibis and Adajio Hotels (1).jpg',
       '/images/Ibis and Adajio Hotels/Ibis and Adajio Hotels (2).jpg',
